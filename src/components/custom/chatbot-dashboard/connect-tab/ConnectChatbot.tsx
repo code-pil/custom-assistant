@@ -21,7 +21,7 @@ export default async function ConnectChatbot({ chatbotId }: { chatbotId: string 
                         <code className="text-gray-800 text-xs font-mono bg-gray-200 p-2 rounded">
                             {`<iframe \n
   
-                  src="${process.env.BASE_REQUEST_URL}/chatbot/${chatbotId}" \n
+                  src="${process.env.NEXT_PUBLIC_BASE_REQUEST_URL}/chatbot/${chatbotId}" \n
                   width="100%" \n
                   height="500px" \n
                   frameborder="0"></iframe>`}
@@ -32,7 +32,7 @@ export default async function ConnectChatbot({ chatbotId }: { chatbotId: string 
                         <div className="flex flex-row items-center justify-center h-20">
                             <span className="text-gray-500 text-sm text-center">Copy the iframe code to your clipboard:</span>
                             <CopyToClipboard text={`<iframe
-                      src="${process.env.BASE_REQUEST_URL}/chatbot/${chatbotId}" 
+                      src="${process.env.NEXT_PUBLIC_BASE_REQUEST_URL}/chatbot/${chatbotId}" 
                       width="100%" 
                       height="500px" 
                       frameborder="0"></iframe>`} />

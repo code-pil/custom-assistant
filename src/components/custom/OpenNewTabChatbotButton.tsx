@@ -10,7 +10,7 @@ export default function OpenNewTabChatbotButton({ chatbotId }: { chatbotId: stri
             </p>
             <Button onClick={
                 () => {
-                    window.open(`${process.env.BASE_REQUEST_URL}/chatbot-iframe/${chatbotId}`, '_blank')
+                    window.open(`${process.env.NEXT_PUBLIC_BASE_REQUEST_URL}/chatbot-iframe/${chatbotId}`, "_blank")
                 }
             }
                 className='mt-2 w-[10vw] font-bold bg-gray-200'
