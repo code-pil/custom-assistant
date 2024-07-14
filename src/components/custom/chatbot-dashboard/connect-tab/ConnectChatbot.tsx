@@ -21,7 +21,7 @@ export default async function ConnectChatbot({ chatbotId }: { chatbotId: string 
                         <code className="text-gray-800 text-xs font-mono bg-gray-200 p-2 rounded">
                             {`<iframe \n
   
-                  src="https://${process.env.BASE_REQUEST_URL}/chatbot/${chatbotId}" \n
+                  src="${process.env.BASE_REQUEST_URL}/chatbot/${chatbotId}" \n
                   width="100%" \n
                   height="500px" \n
                   frameborder="0"></iframe>`}
